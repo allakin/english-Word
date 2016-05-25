@@ -11,7 +11,7 @@
 		738CB3FE1CF5C70600DEEFA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738CB3FD1CF5C70600DEEFA3 /* ViewController.swift */; };
 		738CB4011CF5C70600DEEFA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738CB3FF1CF5C70600DEEFA3 /* Main.storyboard */; };
 		738CB4031CF5C70600DEEFA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 738CB4021CF5C70600DEEFA3 /* Assets.xcassets */; };
-		738CB4061CF5C70600DEEFA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738CB4041CF5C70600DEEFA3 /* LaunchScreen.storyboard */; };
+		738CB40E1CF5CA7A00DEEFA3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 738CB40D1CF5CA7A00DEEFA3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,8 +20,8 @@
 		738CB3FD1CF5C70600DEEFA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		738CB4001CF5C70600DEEFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		738CB4021CF5C70600DEEFA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		738CB4051CF5C70600DEEFA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		738CB4071CF5C70600DEEFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		738CB40D1CF5CA7A00DEEFA3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 				738CB3FD1CF5C70600DEEFA3 /* ViewController.swift */,
 				738CB3FF1CF5C70600DEEFA3 /* Main.storyboard */,
 				738CB4021CF5C70600DEEFA3 /* Assets.xcassets */,
-				738CB4041CF5C70600DEEFA3 /* LaunchScreen.storyboard */,
 				738CB4071CF5C70600DEEFA3 /* Info.plist */,
+				738CB40D1CF5CA7A00DEEFA3 /* Launch Screen.storyboard */,
 			);
 			path = "English-Word";
 			sourceTree = "<group>";
@@ -96,6 +96,7 @@
 				TargetAttributes = {
 					738CB3F71CF5C70600DEEFA3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9T23CDVWRT;
 					};
 				};
 			};
@@ -122,8 +123,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				738CB4061CF5C70600DEEFA3 /* LaunchScreen.storyboard in Resources */,
 				738CB4031CF5C70600DEEFA3 /* Assets.xcassets in Resources */,
+				738CB40E1CF5CA7A00DEEFA3 /* Launch Screen.storyboard in Resources */,
 				738CB4011CF5C70600DEEFA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,14 +150,6 @@
 				738CB4001CF5C70600DEEFA3 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		738CB4041CF5C70600DEEFA3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				738CB4051CF5C70600DEEFA3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -249,10 +242,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "English-Word/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Swift.English-Word";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -260,10 +257,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "English-Word/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Swift.English-Word";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
