@@ -287,6 +287,7 @@
 				738CB40C1CF5C70600DEEFA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
