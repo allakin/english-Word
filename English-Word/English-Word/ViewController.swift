@@ -38,9 +38,12 @@ class ViewController: UIViewController {
   @IBOutlet weak var englishInput: UILabel!
   @IBOutlet weak var russianInput: UILabel!
   @IBAction func buttonMore(sender: UIButton) {
-    
-    englishInput.text = String(arc4random_uniform(UInt32(englishWord.count)))
-    russianInput.text = russianWord[3]
+
+    let index = Int(arc4random_uniform(UInt32(englishWord.count)))
+    englishInput.text = englishWord[index]
+    russianInput.text = russianWord[index]
+//    englishInput.text = String(arc4random_uniform(UInt32(englishWord.count)))
+//    russianInput.text = russianWord[3]
     
   }
   
