@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -8010,8 +8011,11 @@ class ViewController: UIViewController {
     "zoo - зоопарк",
     "zoological - Зоологический (TR!)"
 ]
+//  var indexes: [String] = []
+//  var currentIndex = 0
 
-
+  var old: String?
+  
   var english: String {
     get {
       return englishInput.text!
@@ -8022,19 +8026,38 @@ class ViewController: UIViewController {
     }
   }
 
-  @IBOutlet weak var englishInput: UILabel!
-
-  @IBAction func nextButton(sender: UIButton) {
-
-    let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
-    englishInput.text = words[randomIndex]
-
-  }
-
-
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+  }
+
+  
+//  func back() -> String? {
+//    if words.count > 1 && currentIndex > 0 {
+//      currentIndex -= Int(arc4random_uniform(UInt32(words.count)))
+//      return words[currentIndex]
+//    }
+//    return nil
+//  }
+  
+  @IBOutlet weak var englishInput: UILabel!
+
+  
+  @IBAction func backButton(sender: UIButton) {
+    if let old = old {
+      englishInput.text = old
+    }
+  }
+  
+  @IBAction func nextButton(sender: UIButton) {
+
+    old = englishInput.text
+    englishInput.text = words[Int(arc4random_uniform(UInt32(words.count)))]
+    
+    //let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
+    //englishInput.text = words[randomIndex]
+    //englishInput.text = String(arc4random_uniform(UInt32(words.count)))
   }
 
   override func didReceiveMemoryWarning() {
