@@ -8073,8 +8073,6 @@ class ViewController: UIViewController {
     englishInput.text = words[random]
     newArr.append(random)
     countArr = newArr.count
-    print(newArr)
-    
   }
 
   override func didReceiveMemoryWarning() {
