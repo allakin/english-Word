@@ -8015,6 +8015,8 @@ class ViewController: UIViewController {
 //  var currentIndex = 0
 
   var old: String?
+  var newArr: [Int] = []
+  var countArr = 0
   
   var english: String {
     get {
@@ -8045,19 +8047,34 @@ class ViewController: UIViewController {
 
   
   @IBAction func backButton(sender: UIButton) {
-    if let old = old {
-      englishInput.text = old
+    
+    if countArr == 0 {
+      englishInput.text = "English Word"
+    } else {
+      countArr -= 1
+      englishInput.text = words[countArr]
     }
+    
+//    newArr.append(Int(arc4random_uniform(UInt32(words.count))))
+//    print(newArr)
+    
+    
+    
+    //    if let old = old {
+//      englishInput.text = old
+//    }
   }
   
   @IBAction func nextButton(sender: UIButton) {
 
-    old = englishInput.text
-    englishInput.text = words[Int(arc4random_uniform(UInt32(words.count)))]
+    var random = Int(arc4random_uniform(UInt32(words.count)))
     
-    //let randomIndex = Int(arc4random_uniform(UInt32(words.count)))
-    //englishInput.text = words[randomIndex]
-    //englishInput.text = String(arc4random_uniform(UInt32(words.count)))
+    old = englishInput.text
+    englishInput.text = words[random]
+    newArr.append(random)
+    countArr = newArr.count
+    print(newArr)
+    
   }
 
   override func didReceiveMemoryWarning() {
