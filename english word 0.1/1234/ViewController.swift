@@ -8071,7 +8071,7 @@ class ViewController: UIViewController {
     old = englishInput.text
     englishInput.text = words[random]
     newArr.append(random) // новый созданный массив
-    countArr = newArr.count
+    countArr = newArr.count - 1
     print(newArr)
   }
 
