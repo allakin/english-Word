@@ -8072,7 +8072,6 @@ class ViewController: UIViewController {
     englishInput.text = words[random]
     newArr.append(random) // новый созданный массив
     countArr = newArr.count - 1
-    print(newArr)
   }
 
   override func didReceiveMemoryWarning() {

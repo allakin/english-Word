@@ -11,17 +11,17 @@
 		73589FB01CF76C5A004CC21E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73589FAF1CF76C5A004CC21E /* ViewController.swift */; };
 		73589FB31CF76C5A004CC21E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73589FB11CF76C5A004CC21E /* Main.storyboard */; };
 		73589FB51CF76C5A004CC21E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73589FB41CF76C5A004CC21E /* Assets.xcassets */; };
-		73589FB81CF76C5A004CC21E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73589FB61CF76C5A004CC21E /* LaunchScreen.storyboard */; };
+		736B56EC1CFB52FD001883C3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 736B56EB1CFB52FD001883C3 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		73589FAA1CF76C5A004CC21E /* english word 0.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "english word 0.1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73589FAA1CF76C5A004CC21E /* Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Word.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73589FAD1CF76C5A004CC21E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73589FAF1CF76C5A004CC21E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73589FB21CF76C5A004CC21E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73589FB41CF76C5A004CC21E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		73589FB71CF76C5A004CC21E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73589FB91CF76C5A004CC21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		736B56EB1CFB52FD001883C3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 		73589FAB1CF76C5A004CC21E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73589FAA1CF76C5A004CC21E /* english word 0.1.app */,
+				73589FAA1CF76C5A004CC21E /* Word.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +58,8 @@
 				73589FAF1CF76C5A004CC21E /* ViewController.swift */,
 				73589FB11CF76C5A004CC21E /* Main.storyboard */,
 				73589FB41CF76C5A004CC21E /* Assets.xcassets */,
-				73589FB61CF76C5A004CC21E /* LaunchScreen.storyboard */,
 				73589FB91CF76C5A004CC21E /* Info.plist */,
+				736B56EB1CFB52FD001883C3 /* Launch Screen.storyboard */,
 			);
 			name = "english word 0.1";
 			path = 1234;
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		73589FA91CF76C5A004CC21E /* english word 0.1 */ = {
+		73589FA91CF76C5A004CC21E /* Word */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73589FBC1CF76C5A004CC21E /* Build configuration list for PBXNativeTarget "english word 0.1" */;
+			buildConfigurationList = 73589FBC1CF76C5A004CC21E /* Build configuration list for PBXNativeTarget "Word" */;
 			buildPhases = (
 				73589FA61CF76C5A004CC21E /* Sources */,
 				73589FA71CF76C5A004CC21E /* Frameworks */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = "english word 0.1";
+			name = Word;
 			productName = 1234;
-			productReference = 73589FAA1CF76C5A004CC21E /* english word 0.1.app */;
+			productReference = 73589FAA1CF76C5A004CC21E /* Word.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 73589FA51CF76C5A004CC21E /* Build configuration list for PBXProject "english word 0.1" */;
+			buildConfigurationList = 73589FA51CF76C5A004CC21E /* Build configuration list for PBXProject "Word" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73589FA91CF76C5A004CC21E /* english word 0.1 */,
+				73589FA91CF76C5A004CC21E /* Word */,
 			);
 		};
 /* End PBXProject section */
@@ -124,7 +124,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73589FB81CF76C5A004CC21E /* LaunchScreen.storyboard in Resources */,
+				736B56EC1CFB52FD001883C3 /* Launch Screen.storyboard in Resources */,
 				73589FB51CF76C5A004CC21E /* Assets.xcassets in Resources */,
 				73589FB31CF76C5A004CC21E /* Main.storyboard in Resources */,
 			);
@@ -151,14 +151,6 @@
 				73589FB21CF76C5A004CC21E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		73589FB61CF76C5A004CC21E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				73589FB71CF76C5A004CC21E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -258,7 +250,7 @@
 				INFOPLIST_FILE = 1234/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Swift234;
-				PRODUCT_NAME = "english word 0.1";
+				PRODUCT_NAME = Word;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -273,7 +265,7 @@
 				INFOPLIST_FILE = 1234/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Swift234;
-				PRODUCT_NAME = "english word 0.1";
+				PRODUCT_NAME = Word;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -282,7 +274,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73589FA51CF76C5A004CC21E /* Build configuration list for PBXProject "english word 0.1" */ = {
+		73589FA51CF76C5A004CC21E /* Build configuration list for PBXProject "Word" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73589FBA1CF76C5A004CC21E /* Debug */,
@@ -291,7 +283,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73589FBC1CF76C5A004CC21E /* Build configuration list for PBXNativeTarget "english word 0.1" */ = {
+		73589FBC1CF76C5A004CC21E /* Build configuration list for PBXNativeTarget "Word" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73589FBD1CF76C5A004CC21E /* Debug */,
