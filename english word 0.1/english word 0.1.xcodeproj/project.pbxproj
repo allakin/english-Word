@@ -97,7 +97,7 @@
 				TargetAttributes = {
 					73589FA91CF76C5A004CC21E = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 952YGHYVRV;
+						DevelopmentTeam = 9T23CDVWRT;
 					};
 				};
 			};
@@ -257,9 +257,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 1234/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift.-234";
+				PRODUCT_BUNDLE_IDENTIFIER = Swift234;
 				PRODUCT_NAME = "english word 0.1";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -271,9 +272,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = 1234/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Swift.-234";
+				PRODUCT_BUNDLE_IDENTIFIER = Swift234;
 				PRODUCT_NAME = "english word 0.1";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

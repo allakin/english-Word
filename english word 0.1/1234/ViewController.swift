@@ -8067,10 +8067,10 @@ class ViewController: UIViewController {
   
   @IBAction func nextButton(sender: UIButton) {
 
-    var random = Int(arc4random_uniform(UInt32(words.count)))
+    let random = Int(arc4random_uniform(UInt32(words.count)))
     old = englishInput.text
     englishInput.text = words[random]
-    newArr.append(random)
+    newArr.append(random) // новый созданный массив
     countArr = newArr.count
     print(newArr)
   }
