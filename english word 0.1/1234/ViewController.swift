@@ -8052,7 +8052,7 @@ class ViewController: UIViewController {
       englishInput.text = "English Word"
     } else {
       countArr -= 1
-      englishInput.text = words[countArr]
+      englishInput.text = words[newArr[countArr]]
     }
     
 //    newArr.append(Int(arc4random_uniform(UInt32(words.count))))
@@ -8068,11 +8068,11 @@ class ViewController: UIViewController {
   @IBAction func nextButton(sender: UIButton) {
 
     var random = Int(arc4random_uniform(UInt32(words.count)))
-    
     old = englishInput.text
     englishInput.text = words[random]
     newArr.append(random)
     countArr = newArr.count
+    print(newArr)
   }
 
   override func didReceiveMemoryWarning() {
