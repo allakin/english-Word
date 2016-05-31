@@ -60,15 +60,9 @@ override func viewDidLoad() {
 	let random = Int(arc4random_uniform(UInt32(words.count)))
 	old = englishInput.text
 	englishInput.text = words[random]
-
-	if newArr.count == 0 {
-		newArr.append(random) // новый созданный массив
-		countArr = newArr.count
-		print(newArr)
-	} else {
-		countArr += 1
-		englishInput.text = words[newArr[countArr]]
-	}
+	newArr.append(random) // новый созданный массив
+	countArr = newArr.count - 1
+	print(newArr)
 }
 
 }
