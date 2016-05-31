@@ -28,41 +28,47 @@ var newArr: [Int] = []
 var countArr = 0
 	
 var english: String {
-		get {
-				return englishInput.text!
-		}
-		set{
-				_ = "\(newValue)"
-				englishInput.text = "\(newValue)"
-		}
+	get {
+			return englishInput.text!
+	}
+	set{
+			_ = "\(newValue)"
+			englishInput.text = "\(newValue)"
+	}
 }
 
   
 override func viewDidLoad() {
-		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+	super.viewDidLoad()
+	// Do any additional setup after loading the view, typically from a nib.
 }
 
   
 @IBOutlet weak var englishInput: UILabel!
 
 @IBAction func backBarButton(sender: UIBarButtonItem) {
-		if countArr == 0 {
-				englishInput.text = "English Word"
-		} else {
-				countArr -= 1
-				englishInput.text = words[newArr[countArr]]
-		}
+	if countArr == 0 {
+		englishInput.text = "English Word"
+	} else {
+		countArr -= 1
+		englishInput.text = words[newArr[countArr]]
+	}
 }
 
   
-	@IBAction func nextBarButton(sender: UIBarButtonItem) {
-		let random = Int(arc4random_uniform(UInt32(words.count)))
-		old = englishInput.text
-		englishInput.text = words[random]
+@IBAction func nextBarButton(sender: UIBarButtonItem) {
+	let random = Int(arc4random_uniform(UInt32(words.count)))
+	old = englishInput.text
+	englishInput.text = words[random]
+
+	if newArr.count == 0 {
 		newArr.append(random) // новый созданный массив
-		countArr = newArr.count - 1
+		countArr = newArr.count
 		print(newArr)
+	} else {
+		countArr += 1
+		englishInput.text = words[newArr[countArr]]
+	}
 }
 
 }
