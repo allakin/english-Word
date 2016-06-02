@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		734D8BD01CFF75B800C0432E /* WordsFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734D8BCF1CFF75B800C0432E /* WordsFiles.swift */; };
 		73589FAE1CF76C5A004CC21E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73589FAD1CF76C5A004CC21E /* AppDelegate.swift */; };
 		73589FB01CF76C5A004CC21E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73589FAF1CF76C5A004CC21E /* ViewController.swift */; };
 		73589FB31CF76C5A004CC21E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73589FB11CF76C5A004CC21E /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		734D8BCF1CFF75B800C0432E /* WordsFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordsFiles.swift; sourceTree = "<group>"; };
 		73589FAA1CF76C5A004CC21E /* Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Word.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73589FAD1CF76C5A004CC21E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73589FAF1CF76C5A004CC21E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		734D8BD11CFF75CB00C0432E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				73589FB91CF76C5A004CC21E /* Info.plist */,
+				734D8BCF1CFF75B800C0432E /* WordsFiles.swift */,
+			);
+			name = "Support Files";
+			sourceTree = "<group>";
+		};
 		73589FA11CF76C5A004CC21E = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +69,8 @@
 				73589FAF1CF76C5A004CC21E /* ViewController.swift */,
 				73589FB11CF76C5A004CC21E /* Main.storyboard */,
 				73589FB41CF76C5A004CC21E /* Assets.xcassets */,
-				73589FB91CF76C5A004CC21E /* Info.plist */,
 				736B56EB1CFB52FD001883C3 /* Launch Screen.storyboard */,
+				734D8BD11CFF75CB00C0432E /* Support Files */,
 			);
 			name = "english word 0.1";
 			path = 1234;
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73589FB01CF76C5A004CC21E /* ViewController.swift in Sources */,
+				734D8BD01CFF75B800C0432E /* WordsFiles.swift in Sources */,
 				73589FAE1CF76C5A004CC21E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

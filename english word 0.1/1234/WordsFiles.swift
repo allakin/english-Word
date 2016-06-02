@@ -1,16 +1,14 @@
 //
-//  ViewController.swift
-//  1234
+//  WordsFiles.swift
+//  Word
 //
-//  Created by Павел Анплеенко on 26/05/16.
+//  Created by Павел Анплеенко on 01/06/16.
 //  Copyright © 2016 Pavel Anpleenko. All rights reserved.
 //
 
-import UIKit
 import Foundation
 
-class ViewController: UIViewController {
-	
+class WordsClass {
 	var words: [String] = [
 		"a - неопределенный артикль",
 		"abandon - отказываться, покидать, прекращать",
@@ -112,49 +110,4 @@ class ViewController: UIViewController {
 		"zoo - зоопарк",
 		"zoological - Зоологический (TR!)"
 	]
-	
-
-	var newArr: [Int] = []
-	var countArr = -1
-	
-	@IBOutlet weak var englishInput: UILabel!
-	
-	@IBAction func backBarButton(sender: UIBarButtonItem) {
-		if countArr == 0 || newArr.isEmpty {
-			englishInput.text = "English Word"
-		} else {
-			countArr -= 1
-			englishInput.text = words[newArr[countArr]]
-		}
-	}
-	@IBAction func nextBarButton(sender: UIBarButtonItem) {
-		if countArr == newArr.count - 1 {
-			if newArr.count < words.count {
-				var random: Int!
-				while true {
-					random = Int(arc4random_uniform(UInt32(words.count)))
-					if !newArr.contains(random) {
-						break
-					}
-				}
-				englishInput.text = words[random]
-				newArr.append(random)
-				countArr = newArr.count - 1
-			} else {
-				englishInput.text = "Finish"
-			}
-		} else {
-			countArr += 1
-			englishInput.text = words[newArr[countArr]]
-		}
-	}
 }
-
-
-//  override func didReceiveMemoryWarning() {
-//    super.didReceiveMemoryWarning()
-//    // Dispose of any resources that can be recreated.
-//  }
-
-
-
